@@ -29,6 +29,12 @@ return [0, 1].
 ```
 
 # Solution
+
+## JavaScript
+
+- Runtime: 52ms
+- Memory Usage: 34.6MB
+
 ## Python
 
 - Runtime: 48ms
