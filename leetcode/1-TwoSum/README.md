@@ -39,3 +39,7 @@ return [0, 1].
 - Runtime: 4ms
 - Memory Usage: 3.7MB
 
+## rust
+
+- Runtime: 0ms
+- Memory Usage: 3.1MB
