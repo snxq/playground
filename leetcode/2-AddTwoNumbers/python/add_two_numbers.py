@@ -9,38 +9,23 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        # 进位标识
-        flag = False
-        # 链表指针
-        p1, p2 = l1, l2
         p3 = l3 = ListNode(0)
+        carry = 0
 
-        while True:
-            s = sum([p.val for p in [p1, p2] if p])
-            if flag:
-                s += 1
-            if s >= 10:
-                flag = True
-                s %= 10
-            else:
-                flag = False
+        while l1 != None or l2 != None or carry > 0:
+            sum = carry
+
+            if l1:
+                sum += l1.val
+                l1 = l1.next
+            if l2:
+                sum += l2.val
+                l2 = l2.next
             
-            p3.val = s
-
-            p1 = p1.next if p1 else None
-            p2 = p2.next if p2 else None
-
-            if any([p1, p2]):
-                p3.next = ListNode(0)
-                p3 = p3.next
-            else:
-                if flag:
-                    p3.next = ListNode(1)
-                else:
-                    p3 = None
-                break
-        
-        return l3
+            carry = sum // 10
+            p3.next = ListNode(sum % 10)
+            p3 = p3.next
+        return l3.next
 
 # unittest
 

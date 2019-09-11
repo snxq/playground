@@ -35,7 +35,7 @@ Explanation: 342 + 465 = 807.
 ## Python
 
 - Runtime: 80ms
-- Memory Usage: 14MB
+- Memory Usage: 13.9MB
 
 ## Go
 
