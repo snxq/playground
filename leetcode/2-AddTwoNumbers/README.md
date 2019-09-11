@@ -36,3 +36,8 @@ Explanation: 342 + 465 = 807.
 
 - Runtime: 80ms
 - Memory Usage: 14MB
+
+## Go
+
+- Runtime: 12ms
+- Memory Usage: 4.9MB
