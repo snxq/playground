@@ -56,3 +56,8 @@ Explanation: The answer is "wke", with the length of 3.
 
 - Runtime: 56ms
 - Memory Usage: 14.2MB
+
+## Go
+
+- Runtime: 12ms
+- Memory Usage: 6.7MB
