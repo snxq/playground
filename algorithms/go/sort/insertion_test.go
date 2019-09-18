@@ -44,3 +44,9 @@ func TestInsertion(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkInsertion(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Insertion([]int{99, 22, 13, 0, -1})
+	}
+}
