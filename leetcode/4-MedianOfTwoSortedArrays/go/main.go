@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	var p1, p2 int
 	l := len(nums1) + len(nums2)
@@ -23,9 +21,8 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 		}
 	}
 	l3 := len(nums3)
-	fmt.Println(nums3)
-	if l % 2 == 1{
+	if l%2 == 1 {
 		return float64(nums3[l3-1])
 	}
-	return float64(nums3[l3-2] + nums3[l3-1]) / float64(2)
+	return float64(nums3[l3-2]+nums3[l3-1]) / float64(2)
 }
