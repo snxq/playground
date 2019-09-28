@@ -1,7 +1,9 @@
 package sort
 
-import "testing"
-import "reflect"
+import (
+	"reflect"
+	"testing"
+)
 
 func compareSlice(a, b []interface{}) bool {
 	if len(a) != len(b) {
@@ -21,18 +23,18 @@ func compareSlice(a, b []interface{}) bool {
 }
 
 func TestInsertion(t *testing.T) {
-	cases := []struct{
-		Input []int
+	cases := []struct {
+		Input  []int
 		Expect []int
 	}{
 		{
-			Input: []int{5, 2, 4, 6, 1, 3},
+			Input:  []int{5, 2, 4, 6, 1, 3},
 			Expect: []int{1, 2, 3, 4, 5, 6},
-		},{
-			Input: []int{99, 22, 13, 0, -1},
+		}, {
+			Input:  []int{99, 22, 13, 0, -1},
 			Expect: []int{-1, 0, 13, 22, 99},
-		},{
-			Input: []int{3},
+		}, {
+			Input:  []int{3},
 			Expect: []int{3},
 		},
 	}
