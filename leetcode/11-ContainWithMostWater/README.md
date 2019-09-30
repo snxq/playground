@@ -10,7 +10,7 @@ Note: You may not slant the container and n is at least 2.
 
 说明：你不能倾斜容器，且 n 的值至少为 2。
 
-[](https://github.com/snxq/playground/leetcode/11-ContainWithMostWater/question_11.jpg)
+![](https://raw.githubusercontent.com/snxq/playground/master/leetcode/11-ContainWithMostWater/question_11.jpg)
 
 # Solution
 
