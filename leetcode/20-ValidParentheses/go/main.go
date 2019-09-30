@@ -20,7 +20,7 @@ func isValid(s string) bool {
 		} else if len(stack) == 0 {
 			return false
 		} else {
-			right, _ := couples[stack[len(stack)-1]]
+			right := couples[stack[len(stack)-1]]
 			if right == c {
 				stack = stack[:len(stack)-1]
 			} else {
@@ -29,8 +29,6 @@ func isValid(s string) bool {
 		}
 
 	}
-	if len(stack) == 0 {
-		return true
-	}
-	return false
+
+	return len(stack) == 0
 }
