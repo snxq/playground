@@ -1,8 +1,10 @@
 package sort
 
 import (
+	"math/rand"
 	"reflect"
 	"testing"
+	"time"
 )
 
 func compareSlice(a, b []interface{}) bool {
@@ -48,7 +50,12 @@ func TestInsertion(t *testing.T) {
 }
 
 func BenchmarkInsertion(b *testing.B) {
+	rand.Seed(time.Now().Unix())
+	arr := []int{}
+	for i := 0; i < 80000; i++ {
+		arr = append(arr, rand.Intn(100000))
+	}
 	for i := 0; i < b.N; i++ {
-		Insertion([]int{99, 22, 13, 0, -1})
+		Insertion(arr)
 	}
 }
